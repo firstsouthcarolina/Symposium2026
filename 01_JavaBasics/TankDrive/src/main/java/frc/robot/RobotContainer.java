@@ -48,7 +48,7 @@ public class RobotContainer {
   private void configureDefaultCommands() {
     m_drive.setDefaultCommand(
       m_drive.arcadeDrive(
-      () -> m_driverController.getLeftYSquared(),
+      () -> -m_driverController.getLeftYSquared(),
       () -> -m_driverController.getRightXSquared()));
   }
 
